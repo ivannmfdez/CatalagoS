@@ -66,3 +66,38 @@ searchInput.addEventListener('input', (e) => {
         }
     });
 });
+// Función para detectar la hora y aplicar el modo oscuro si es necesario
+function aplicarModoOscuroAutomatico() {
+    const now = new Date();
+    const hour = now.getHours();
+    
+    // Definir horas para el modo oscuro (por ejemplo, de 7 p.m. a 7 a.m.)
+    const horaInicioModoOscuro = 19; // 7 p.m.
+    const horaFinModoOscuro = 7; // 7 a.m.
+
+    if (hour >= horaInicioModoOscuro || hour < horaFinModoOscuro) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+}
+function openModal(productCode) {
+    let productImage = '';
+    let productDescription = '';
+
+    // Ajusta las imágenes según el código del producto
+    if (productCode === '3005860') {
+        productImage = 'detallesp/3005860.png';
+        productDescription = 'Descripción del producto 3005860';
+    }
+
+    document.getElementById('modal-img').src = productImage;
+    document.getElementById('modal-description').innerHTML = productDescription;
+
+    // Mostrar el modal
+    document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}

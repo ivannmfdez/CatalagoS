@@ -4,7 +4,37 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Estilos para el Modo Claro */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Estilos para el Modo Oscuro */
+body.dark-mode {
+    background-color: #181818;
+    color: #e0e0e0;
+}
 
+body.dark-mode #search-bar {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .product {
+    background-color: #282828;
+    border-color: #444;
+}
+
+body.dark-mode .voice-search-icon {
+    color: #ff9800;
+}
+
+body.dark-mode .voice-search-icon:hover {
+    color: #ffa726;
+}
 /* Estilos para el encabezado fijo */
 header {
     position: fixed;
@@ -35,11 +65,46 @@ header {
 
 #search-bar {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px 10px 10px 50px; /* Espacio a la izquierda para el ícono */
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.voice-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
+.voice-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #555;
+}
+
+.voice-button:hover svg {
+    fill: #007bff;
+}
+#products-container {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 /* Sección de categorías */
 .categories {
     display: flex;

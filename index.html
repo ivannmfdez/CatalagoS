@@ -161,30 +161,47 @@
             }
         }
 
-        /* Estilos para el modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 59, 113, 0.8);
-            padding-top: 60px;
-            box-sizing: border-box;
-        }
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 59, 113, 0.8);
+    padding-top: 60px;
+    box-sizing: border-box;
+}
 
-        .modal-content {
-            background-color: #ffffff;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            box-shadow: 0 0 15px rgba(0, 59, 113, 0.5);
-            border-radius: 8px;
-        }
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 59, 113, 0.5);
+    border-radius: 8px;
+}
+
+/* Estilos para la imagen principal del modal */
+.modal-img-main {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Estilos para la imagen secundaria del modal */
+.imagen-debajo {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
 
         .close {
             color: #aaaaaa;
@@ -229,7 +246,7 @@
             <div class="product-item" class="product" data-category="bote" data-name="BL BOTE" data-code="3008167" onclick="openModal('3008167')">
                 <img src="producto2.jpg" alt="Producto 2">
                 <h2>3008167</h2>
-                <p>BL BOTE<br>12 PK 24/355 ML CT</p>
+                <p>BUD LIGHT BOTE<br>12 PK 24/355 ML CT</p>
             </div>
         <div class="product-item" data-name="BOCA PILS" data-code="3005855" onclick="openModal('3005855')">
                 <img src="producto2.jpg" alt="Producto 2">
@@ -246,25 +263,25 @@
                 <h2>3007989</h2>
                 <p>BOCANEGRA PILSNER<br>6(4PK)/24 355 ML</p>
             </div>
-            <div class="product-item" data-name="BUD LG" data-code="3006598" onclick="openModal('3006598')">
+            <div class="product-item" data-name="BUD LIGHT" data-code="3006598" onclick="openModal('3006598')">
                 <img src="producto2.jpg" alt="Producto 2">
                 <h2>3006598</h2>
-                <p>BUD LG<br>6PK 24/355 ML CT NR CI.</p>
+                <p>BUD LIGHT<br>6PK 24/355 ML CT NR CI.</p>
             </div>
-            <div class="product-item" data-name="BUD LG BT" data-code="3006699" onclick="openModal('3006699')">
+            <div class="product-item" data-name="BUD LIGHT BOTE" data-code="3006699" onclick="openModal('3006699')">
                 <img src="producto2.jpg" alt="Producto 2">
                 <h2>3006699</h2>
-                <p>BUD LG BT<br>12 PK 24/355 ML CT CI</p>
+                <p>BUD LIGHT BOTE<br>12 PK 24/355 ML CT CI</p>
             </div>
-            <div class="product-item" data-name="BUD LD BT" data-code="3006518" onclick="openModal('3006518')">
+            <div class="product-item" data-name="BUD LIGHT BOTE" data-code="3006518" onclick="openModal('3006518')">
                 <img src="producto2.jpg" alt="Producto 2">
                 <h2>3006518</h2>
-                <p>BUD LG BT<br>4PK H-C 24/473 ML CT CI</p>
+                <p>BUD LIGHT BOTE<br>4PK H-C 24/473 ML CT CI</p>
             </div>
-            <div class="product-item" data-name="BUD LG BT" data-code="3006519" onclick="openModal('3006519')">
+            <div class="product-item" data-name="BUD LIGHT BOTE" data-code="3006519" onclick="openModal('3006519')">
                 <img src="producto2.jpg" alt="Producto 2">
                 <h2>3006519</h2>
-                <p>BUD LG BT<br>6 PK 24/355 ML CT</p>
+                <p>BUD LIGHT BOTE<br>6 PK 24/355 ML CT</p>
             </div>
             <div class="product-item" data-name="BUD LIGHT BOTE" data-code="3000066" onclick="openModal('3000066')">
                 <img src="producto2.jpg" alt="Producto 2">
@@ -623,20 +640,20 @@
                     <h2>3008478</h2>
                     <p>PACIFICO<br>6 PK 24/355 ML NR CI</p>
                 </div>
-            <div class="product-item" data-name="PACIFICO CLARA BT<br>6 PK H-C 24/410 ML" data-code="3010298" onclick="openModal('3010298')">
+            <div class="product-item" data-name="PACIFICO CLARA BOTE<br>6 PK H-C 24/410 ML" data-code="3010298" onclick="openModal('3010298')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3010298</h2>
-                    <p>PACIFICO CLARA BT<br>6 PK H-C 24/410 ML</p>
+                    <p>PACIFICO CLARA BOTE<br>6 PK H-C 24/410 ML</p>
                 </div> 
             <div class="product-item" data-name="PACIFICO LIGHT BOTE<br>8 PK H-C 24/355 ML CT" data-code="3000050" onclick="openModal('3000050')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3000050</h2>
                     <p>PACIFICO LIGHT BOTE<br>8 PK H-C 24/355 ML CT</p>
                 </div>
-            <div class="product-item" data-name="PACIFICO LIGTH BOTE<br>12 PK FRIDGE 24/355 ML CT" data-code="3000192" onclick="openModal('3000192')">
+            <div class="product-item" data-name="PACIFICO LIGHT BOTE<br>12 PK FRIDGE 24/355 ML CT" data-code="3000192" onclick="openModal('3000192')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3000192</h2>
-                    <p>PACIFICO LIGTH BOTE<br>12 PK FRIDGE 24/355 ML CT</p>
+                    <p>PACIFICO LIGHT BOTE<br>12 PK FRIDGE 24/355 ML CT</p>
                 </div>
             <div class="product-item" data-name="PACIFICO SUAVE BOTE<br>6 PK H-C 24/410 ML" data-code="3010446" onclick="openModal('3010446')">
                     <img src="producto2.jpg" alt="Producto 2">
@@ -683,20 +700,20 @@
                     <h2>3008597</h2>
                     <p>V 1.8 BT<br>4 PK H-C 27/473 ML</p>
                 </div>
-            <div class="product-item" data-name="V BT<br>12PK DIV 12/710 ML" data-code="3008268" onclick="openModal('3008268')">
+            <div class="product-item" data-name="VICTORIA BOTE<br>12PK DIV 12/710 ML" data-code="3008268" onclick="openModal('3008268')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3008268</h2>
-                    <p>V BT<br>12PK DIV 12/710 ML</p>
+                    <p>VICTORIA BOTE<br>12PK DIV 12/710 ML</p>
                 </div>
-            <div class="product-item" data-name="V CHAMOY BT<br>4PK H-C 24/473 ML" data-code="3008402" onclick="openModal('3008402')">
+            <div class="product-item" data-name="VICTORIA CHAMOY BOTE<br>4PK H-C 24/473 ML" data-code="3008402" onclick="openModal('3008402')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3008402</h2>
-                    <p>V CHAMOY BT<br>4PK H-C 24/473 ML</p>
+                    <p>VICTORIA CHAMOY BOTE<br>4PK H-C 24/473 ML</p>
                 </div> 
-            <div class="product-item" data-name="V FAM<br>12/940 ML R GRABADA" data-code="3009068" onclick="openModal('3009068')">
+            <div class="product-item" data-name="VICTORIA FAMILIAR<br>12/940 ML R GRABADA" data-code="3009068" onclick="openModal('3009068')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3009068</h2>
-                    <p>V FAM<br>12/940 ML R GRABADA</p>
+                    <p>VICTORIA FAMILIAR<br>12/940 ML R GRABADA</p>
                 </div>
             <div class="product-item" data-name="VICKY JAMAICA CAN<br>24PK 355 ML" data-code="3010542" onclick="openModal('3010542')">
                     <img src="producto2.jpg" alt="Producto 2">
@@ -728,30 +745,30 @@
                     <h2>3005167</h2>
                     <p>VICTORIA BOTE<br>6PK H-C 24/355 ML CT</p>
             </div>
-                <div class="product-item" data-name="VICTORIA BT<br>12PK 24/330 ML" data-code="3009850" onclick="openModal('3009850')">
+                <div class="product-item" data-name="VICTORIA BOTE<br>12PK 24/330 ML" data-code="3009850" onclick="openModal('3009850')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3009850</h2>
-                    <p>VICTORIA BT<br>12PK 24/330 ML</p>
+                    <p>VICTORIA BOTE<br>12PK 24/330 ML</p>
                 </div> 
-            <div class="product-item" data-name="VICTORIA BT<br>12P 24/355 ML MALETIN" data-code="3006108" onclick="openModal('3006108')">
+            <div class="product-item" data-name="VICTORIA BOTE<br>12P 24/355 ML MALETIN" data-code="3006108" onclick="openModal('3006108')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3006108</h2>
-                    <p>VICTORIA BT<br>12P 24/355 ML MALETIN</p>
+                    <p>VICTORIA BOTE<br>12P 24/355 ML MALETIN</p>
                 </div>
-            <div class="product-item" data-name="VICTORIA BT<br>4PK H-C 24/473 ML XIBALBA" data-code="3009725" onclick="openModal('3009725')">
+            <div class="product-item" data-name="VICTORIA BOTE<br>4PK H-C 24/473 ML XIBALBA" data-code="3009725" onclick="openModal('3009725')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3009725</h2>
-                    <p>VICTORIA BT<br>4PK H-C 24/473 ML XIBALBA</p>
+                    <p>VICTORIA BOTE<br>4PK H-C 24/473 ML XIBALBA</p>
                 </div>
-             <div class="product-item" data-name="VICTORIA BT<br>6PK H-C 24/410 ML" data-code="3010297" onclick="openModal('3010297')">
+             <div class="product-item" data-name="VICTORIA BOTE<br>6PK H-C 24/410 ML" data-code="3010297" onclick="openModal('3010297')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3010297</h2>
-                    <p>VICTORIA BT<br>6PK H-C 24/410 ML</p>
+                    <p>VICTORIA BOTE<br>6PK H-C 24/410 ML</p>
                 </div>
-            <div class="product-item" data-name="VICTORIA BT<br>6PK H-C 24/330 ML" data-code="3008989" onclick="openModal('3008989')">
+            <div class="product-item" data-name="VICTORIA BOTE<br>6PK H-C 24/330 ML" data-code="3008989" onclick="openModal('3008989')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3008989</h2>
-                    <p>VICTORIA BT<br>6PK H-C 24/330 ML</p>
+                    <p>VICTORIA BOTE<br>6PK H-C 24/330 ML</p>
                 </div>
             <div class="product-item" data-name="VICTORIA CHELADA CN<br>4PK H-C 24/473 ML OCT" data-code="3005340" onclick="openModal('3005340')">
                     <img src="producto2.jpg" alt="Producto 2">
@@ -763,30 +780,35 @@
                     <h2>3001463</h2>
                     <p>VICTORIA LOOSE PK 24/355 ML CM</p>
                 </div>
-            <div class="product-item" data-name="VICTORIA MANGO BT<br>4P H-C 24/473 ML" data-code="3009209" onclick="openModal('3009209')">
-                    <img src="producto2.jpg" alt="Producto 2">
+            <div class="product-item" data-name="VICTORIA MANGO BOTE<br>4P H-C 24/473 ML" data-code="3009209" onclick="openModal('3009209')">
+                    <img src="p3009209.png" alt="Producto 2">
                     <h2>3009209</h2>
-                    <p>VICTORIA MANGO BT<br>4P H-C 24/473 ML</p>
+                    <p>VICTORIA MANGO BOTE<br>4P H-C 24/473 ML</p>
                 </div>
             <div class="product-item" data-name="VICTORIA MEGA<br>12/1.2L CM LISA" data-code="3002998" onclick="openModal('3002998')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3002998</h2>
                     <p>VICTORIA MEGA<br>12/1.2L CM LISA</p>
                 </div>
-            <div class="product-item" data-name="VICTORIA PIÑA BT<br>4P H-C 24/473 ML" data-code="3010377" onclick="openModal('3010377')">
+            <div class="product-item" data-name="VICTORIA PIÑA BOTE<br>4P H-C 24/473 ML" data-code="3010377" onclick="openModal('3010377')">
                     <img src="producto2.jpg" alt="Producto 2">
                     <h2>3010377</h2>
-                    <p>VICTORIA PIÑA BT<br>4P H-C 24/473 ML</p>
-                </div>
-                
+                    <p>VICTORIA PIÑA BOTE<br>4P H-C 24/473 ML</p>
+                </div> 
             <!-- Más productos aquí -->
         </div>
     </div>
     <!-- Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
+            <!-- Contenido actual del modal -->
+            <div class="modal-header">
+                <!-- Título, botones, etc. -->
+            </div>   
             <span class="close" onclick="closeModal()">&times;</span>
             <img id="modal-img" src="" alt="Imagen del Producto" style="width: 100%; height: auto; margin-bottom: 20px;">
+             <!-- Agregar nueva imagen debajo de la otra en todos los productos-->
+        <img src="Tiendas Comerciales de Venta1.png" alt="Descripción de la imagen" class="imagen-debajo">
             <h2 id="modal-title"></h2>
             <p id="modal-description"></p>
         </div>
@@ -805,7 +827,11 @@
             } else if (productCode === '3008167') {
                 productImage = 'detallesp/3008167.png';
                 productDescription = 'Descripción modificada para el producto 3008167.';
+            }    else if (productCode === '3009696') {
+                productImage = 'detallesp/3009696.png';
+                productDescription = 'Descripción modificada para el producto 3009696.';
             }
+
             // Puedes añadir más condiciones aquí para otros productos
 
             document.getElementById('modal-title').textContent = productCode;
